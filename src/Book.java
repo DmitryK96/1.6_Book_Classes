@@ -1,14 +1,18 @@
 public class Book {
+    public static int onlineBook = 0;
+
     public String title;
-    public String author;
+    public Author author;
     public String genre;
     public int totalPages;
 
-    public Book(String title, String author, String genre, int totalPages){
+    public Book(String title, Author author, String genre, int totalPages){
         this.title = title;
         this.author = author;
         this.genre = genre;
         this.totalPages = totalPages;
+
+        onlineBook++;
     }
 
     @Override
